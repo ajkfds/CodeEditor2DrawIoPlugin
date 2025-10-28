@@ -85,7 +85,13 @@ namespace pluginDrawIo.NavigatePanel
             {
                 Dispatcher.UIThread.Post(() =>
                 {
-                    _updateVisual();
+                    try
+                    {
+                        _updateVisual();
+                    }catch(Exception ex)
+                    {
+                        CodeEditor2.Controller.AppendLog("#Exception " + ex.Message, Avalonia.Media.Colors.Red);
+                    }
                 });
             }
         }
@@ -140,7 +146,7 @@ namespace pluginDrawIo.NavigatePanel
             List<AjkAvaloniaLibs.Libs.Icons.OverrideIcon> overrideIcons = new List<AjkAvaloniaLibs.Libs.Icons.OverrideIcon>();
 
             return AjkAvaloniaLibs.Libs.Icons.GetSvgBitmap(
-                "CodeEditor2DrawIoPlugin/Assets/Icon/image.svg",
+                "CodeEditor2/Assets/Icons/image.svg",
                 Avalonia.Media.Color.FromArgb(100, 200, 240, 240),
                 overrideIcons
                 );

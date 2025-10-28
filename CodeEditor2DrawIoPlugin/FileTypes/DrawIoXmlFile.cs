@@ -15,7 +15,8 @@ namespace pluginDrawIo.FileTypes
         public override bool IsThisFileType(string relativeFilePath, CodeEditor2.Data.Project project)
         {
             if (
-                relativeFilePath.ToLower().EndsWith(".drawio")
+                relativeFilePath.ToLower().EndsWith(".drawio")||
+                relativeFilePath.ToLower().EndsWith(".drawio.svg")
             )
             {
                 return true;
