@@ -22,16 +22,24 @@ namespace pluginDrawIo.NavigatePanel
 
         public override async void OnSelected()
         {
-            Update();
+            try
+            {
+                await UpdateAsync();
+            }
+            catch
+            {
+                if (System.Diagnostics.Debugger.IsAttached) System.Diagnostics.Debugger.Break();
+            }
         }
 
-        public override void Update()
+        public override Task UpdateAsync()
         {
             if (DrawIoXmlFile == null)
             {
-                return;
+                return Task.CompletedTask;
             }
             UpdateVisual();
+            return Task.CompletedTask;
         }
 
         public override void UpdateVisual()
