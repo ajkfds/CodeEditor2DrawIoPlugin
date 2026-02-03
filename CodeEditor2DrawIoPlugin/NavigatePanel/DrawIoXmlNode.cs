@@ -1,4 +1,5 @@
-﻿using Avalonia.Media;
+﻿using Avalonia.Controls;
+using Avalonia.Media;
 using Avalonia.Threading;
 using System;
 using System.Collections.Generic;
@@ -118,5 +119,10 @@ namespace pluginDrawIo.NavigatePanel
                 overrideIcons
                 );
         }
+
+        public static new Action<ContextMenu>? CustomizeSpecificNodeContextMenu;
+        protected override Action<ContextMenu>? customizeSpecificNodeContextMenu => CustomizeSpecificNodeContextMenu;
+
+
     }
 }
