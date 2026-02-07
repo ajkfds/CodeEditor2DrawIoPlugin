@@ -10,7 +10,7 @@ namespace pluginDrawIo.Data
 {
     public class DrawIoXmlFile : CodeEditor2.Data.File
     {
-        public static DrawIoXmlFile Create(string relativePath, Project project)
+        public static Task<DrawIoXmlFile> CreateAsync(string relativePath, Project project)
         {
             string name;
             if (relativePath.Contains(System.IO.Path.DirectorySeparatorChar))
@@ -28,7 +28,7 @@ namespace pluginDrawIo.Data
                 Name = name
             };
 
-            return chatLogFile;
+            return Task.FromResult(chatLogFile);
         }
 
         protected override CodeEditor2.NavigatePanel.NavigatePanelNode CreateNode()

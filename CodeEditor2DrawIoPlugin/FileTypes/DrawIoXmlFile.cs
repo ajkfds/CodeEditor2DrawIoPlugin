@@ -24,9 +24,9 @@ namespace pluginDrawIo.FileTypes
             return false;
         }
 
-        public override CodeEditor2.Data.File CreateFile(string relativeFilePath, CodeEditor2.Data.Project project)
+        public override async Task<CodeEditor2.Data.File> CreateFile(string relativeFilePath, CodeEditor2.Data.Project project)
         {
-            return Data.DrawIoXmlFile.Create(relativeFilePath, project);
+            return await Data.DrawIoXmlFile.CreateAsync(relativeFilePath, project);
         }
     }
 }
