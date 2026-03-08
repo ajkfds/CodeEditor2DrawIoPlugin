@@ -1,4 +1,4 @@
-﻿using AjkAvaloniaLibs.Libs.Json;
+using AjkAvaloniaLibs.Libs.Json;
 using CodeEditor2.Data;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿using Avalonia.Controls;
+using Avalonia.Controls;
 using CodeEditor2.FileTypes;
 using System;
 using System.Collections.Generic;

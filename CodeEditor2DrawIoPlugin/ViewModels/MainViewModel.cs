@@ -1,4 +1,4 @@
-﻿namespace CodeEditor2DrawIoPlugin.ViewModels;
+namespace CodeEditor2DrawIoPlugin.ViewModels;
 
 public class MainViewModel : ViewModelBase
 {
