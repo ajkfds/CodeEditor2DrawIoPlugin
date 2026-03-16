@@ -30,7 +30,7 @@ namespace pluginDrawIo
             project.ProjectProperties.Add(Id, new ProjectProperty(project));
         }
 
-        private static TabItem previewTab;
+        private static TabItem? previewTab;
         public bool Initialize()
         {
             {
