@@ -1,11 +1,4 @@
 using Avalonia.Controls;
-using CodeEditor2.FileTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static CodeEditor2.Controller;
 
 namespace pluginDrawIo
 {
@@ -51,7 +44,7 @@ namespace pluginDrawIo
                 Header = "DrawIO",
                 Name = "DrawIo",
                 FontSize = 12,
-            //    //                Icon = new Avalonia.Media.Imaging.Bitmap("CodeEditor2AiPlugin/Assets/Icons/chat.svg"),
+                //    //                Icon = new Avalonia.Media.Imaging.Bitmap("CodeEditor2AiPlugin/Assets/Icons/chat.svg"),
 
                 Content = drawIoPreviewControl
             };
@@ -67,12 +60,12 @@ namespace pluginDrawIo
             // register project property form tab
             //            CodeEditor.Tools.ProjectPropertyForm.FormCreated += Tools.ProjectPropertyTab.ProjectPropertyFromCreated;
 
-//            NavigatePanel.NavigatePanelMenu.Register();
+            //            NavigatePanel.NavigatePanelMenu.Register();
 
             return true;
         }
         internal static Avalonia.Controls.TabItem? chatTab;
-//        internal static pluginAi.Views.ChatControl? chatControl;
+        //        internal static pluginAi.Views.ChatControl? chatControl;
 
     }
 }

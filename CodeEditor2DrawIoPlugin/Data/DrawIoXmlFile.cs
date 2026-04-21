@@ -1,10 +1,5 @@
 using CodeEditor2.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using static CodeEditor2.Controller;
 
 namespace pluginDrawIo.Data
 {

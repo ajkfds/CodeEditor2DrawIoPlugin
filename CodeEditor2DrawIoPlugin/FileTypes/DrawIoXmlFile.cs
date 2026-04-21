@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace pluginDrawIo.FileTypes
 {
@@ -15,7 +10,7 @@ namespace pluginDrawIo.FileTypes
         public override bool IsThisFileType(string relativeFilePath, CodeEditor2.Data.Project project)
         {
             if (
-                relativeFilePath.ToLower().EndsWith(".drawio")||
+                relativeFilePath.ToLower().EndsWith(".drawio") ||
                 relativeFilePath.ToLower().EndsWith(".drawio.svg")
             )
             {
