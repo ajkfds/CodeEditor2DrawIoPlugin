@@ -5,5 +5,4 @@
              xmlns:browser="clr-namespace:ajkCefGlue.Browser;assembly=ajkCefGlue"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="pluginDrawIo.DrawIoPreviewControl">
-	<browser:BrowserControl x:Name="browser"/>
 </UserControl>
